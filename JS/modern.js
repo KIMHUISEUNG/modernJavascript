@@ -14,5 +14,3 @@ function run() {
 }
 
 run();
-
-console.log(str1);
