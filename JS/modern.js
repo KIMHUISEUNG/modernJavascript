@@ -1,16 +1,7 @@
-function run() {
-  var sum = 0;
-  if (true) {
-    let sum = sum + 10;
-  }
-}
-run();
+const num = 12345678;
+console.log(num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+//num.toString().replace()
 
-/**
- * let으로 선언하는 변수는 선언 후에 사용해야 함.
- * Uncaught ReferenceError: Cannot access 'sum' before initialization
-    at run (modern.js:4)
-    at modern.js:7
-  run @ modern.js:4
-  (익명) @ modern.js:7
- */
+console.log(parseFloat("0.0333E+2"));
+console.log(parseFloat("1.234abc"));
+console.log(parseFloat("실수"));
