@@ -1,3 +1,21 @@
+let array1 = [1, 2, 3, 4, 5];
+let array2 = [0, 2, 4, 6, 8];
+function getIntersection(array1, array2) {
+  let intersection = [];
+  let hashTable = {};
+
+  for (let i = 0; i < array1.length; i++) {
+    hashTable[array1[i]] = true;
+  }
+  for (let j = 0; j < array.length; j++) {
+    if (hashTable[array2[j]]) {
+      intersection.push(array2[j]);
+    }
+  }
+  return intersection;
+}
+getIntersection(array1, array2);
+
 function isSubset(array1, array2) {
   let largerArray;
   let smallerArray;
